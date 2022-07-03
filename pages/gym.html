@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" href="../media/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap"rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -47,17 +49,17 @@
 
 
     <aside id="instalaciones" class="instalaciones_grid">
-        <div class="instalacion area1">
+        <div class="instalacion area1" data-aos="zoom-in-up">
             <img src="../media/instalaciones1.jpg" alt="Instalaciones Sport fit">
             <p class="descripcion">Contamos con zona de cardio para que puedas calentar antes de tu entrenamiento.</p>
         </div>
 
-        <div class="instalacion area2">
+        <div class="instalacion area2" data-aos="zoom-in-up">
             <img src="../media/instalaciones2.jpg" alt="Instalaciones Sport fit">
             <p class="descripcion">Nuestras clases de spinning se disfrutan más con una increíble vista.</p>
         </div>
 
-        <div class="instalacion area3">
+        <div class="instalacion area3" data-aos="zoom-in-up">
             <img src="../media/instalaciones3.jpg" alt="Instalaciones Sport fit">
             <p class="descripcion">Nuestro equipo de gimnasio se encuentra en constante mantenimiento para que puedas
                 disfrutar de tus rutinas.</p>
@@ -70,6 +72,9 @@
 
         <footer>Todos los derechos reservados 2022 | Sport Fit</footer>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

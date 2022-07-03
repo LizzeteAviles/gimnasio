@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap"rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-
 <body>
     <div class="grid_principal">
         <header>
@@ -57,21 +58,21 @@
 
     <article class="grid_disciplinas">
 
-        <div class="disciplina spinning">
+        <div class="disciplina spinning" data-aos="zoom-in-up">
             <img src="media/spinning.jpg" alt="Spinning">
             <h2>Spinning</h2>
             <a href="#spinning" class="boton">CONOCE +</a>
         </div>
 
 
-        <div class="disciplina gym">
+        <div class="disciplina gym" data-aos="zoom-in-up">
             <img src="media/gym.jpg" alt="gimnasio">
             <h2>Gimnasio</h2>
             <a href="#gym" class="boton">CONOCE +</a>
         </div>
 
 
-        <div class="disciplina box">
+        <div class="disciplina box" data-aos="zoom-in-up">
             <img src="media/box.jpg" alt="box">
             <h2>Box</h2>
             <a href="#box" class="boton">CONOCE +</a>
@@ -83,7 +84,7 @@
     <div class="grid_tags">
         <div class="seccion_tags">
             <div id="spinning" class="tags">
-                <img src="media/spinning_post.JPG" alt="Spinning">
+                <img src="media/spinning_post.png" alt="Spinning">
                 <p>Al ser un ejercicio de alta intensidad y con un gran trabajo cardiovascular <strong>ayuda a eliminar
                         la
                         tensión acumulada.</strong> Por ello, el spinning es una de las mejores prácticas que se pueden
@@ -101,12 +102,12 @@
                     ayudarte a mantener la pérdida de peso. Considera el hecho de que cuando realizas una actividad
                     física,
                     quemas calorías.</p>
-                <img src="media/gym_post.JPG" alt="Gimnasio">
+                <img src="media/gym_post.png" alt="Gimnasio">
             </div>
 
 
             <div id="box" class="tags">
-                <img src="media/box_post.JPG" alt="Box">
+                <img src="media/box_post.png" alt="Box">
                 <p>Tanto a nivel físico como mental, golpear el saco <strong>ofrece grandes beneficios.</strong> Tiene
                     multitud de ventajas y es que no hace falta una gran experiencia, ya que permite una evolución
                     progresiva y se adapta a cualquier nivel.</p>
@@ -117,7 +118,9 @@
         <footer>Todos los derechos reservados 2022 | Sport Fit</footer>
 
     </div>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

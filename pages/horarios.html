@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" href="../media/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap"rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="grid_horarios">
@@ -74,7 +76,9 @@
             <p>Mantente al tanto de nuestras clases especiales.</p>
         </div>
 
-        <div class="horarios_end seccion iphone"><img src="../media/siguenos.jpg" alt="Gimnasio"></div>
+        <div class="horarios_end seccion iphone" data-aos="zoom-in-up">
+            <img src="../media/siguenos.jpg" alt="Gimnasio">
+        </div>
 
         <div class="seccion actualizacion">
             <h2>¡TODOS LOS DÍAS HAY UNA ACTUALIZACIÓN!</h2>
@@ -87,7 +91,9 @@
         <footer>Todos los derechos reservados 2022 | Sport Fit</footer>
     </div>
 
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
