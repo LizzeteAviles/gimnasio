@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM | Sport Fit</title>
     <link rel="icon" type="image/x-icon" href="../media/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap"rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,67 +15,93 @@
 </head>
 <body>
 
-    <div class="grid_gym">
-        <header>
-            <a href="../index.html"><img src="../media/logo.png" alt="logo gimnasio"></a>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="../index.html">home</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="logo" href="../index.html"><img src="../media/logo.png" alt="logo gimnasio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /> </svg></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="gym.html" class="activo">gym</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gym.html">gym</a>
                     </li>
-                    <li>
-                        <a href="team.html">team</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">team</a>
                     </li>
-                    <li>
-                        <a href="horarios.html">horarios</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="horarios.html">horarios</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">contacto</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+    </nav>
+</header>
 
 
-
-        <main id="banner_gym">
+<main class="container-fluid">
+    <div class="row">
+        <div id="banner_gym" class="col-md-12 main">
             <h1>Conoce nuestras instalaciones</h1>
             <h2>Tenemos las mejores instalaciones para tener un óptimo entrenamiento</h2>
-        </main>
 
+        </div>
     </div>
+</main>
 
 
-    <aside id="instalaciones" class="instalaciones_grid">
-        <div class="instalacion area1" data-aos="zoom-in-up">
+<aside class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 instalacion" data-aos="zoom-in-up">
             <img src="../media/instalaciones1.jpg" alt="Instalaciones Sport fit">
-            <p class="descripcion">Contamos con zona de cardio para que puedas calentar antes de tu entrenamiento.</p>
+            <p class="instalacion_texto">Contamos con zona de cardio para que puedas calentar antes de tu entrenamiento.
+            </p>
         </div>
-
-        <div class="instalacion area2" data-aos="zoom-in-up">
+        <div class="col-lg-6 col-md-12 col-sm-12 instalacion" data-aos="zoom-in-up">
             <img src="../media/instalaciones2.jpg" alt="Instalaciones Sport fit">
-            <p class="descripcion">Nuestras clases de spinning se disfrutan más con una increíble vista.</p>
+            <p class="instalacion_texto">Nuestras clases de spinning se disfrutan más con una increíble vista.</p>
+
+            <div data-aos="zoom-in-up">
+                <img src="../media/instalaciones3.jpg" alt="Instalaciones Sport fit">
+                <p class="instalacion_texto">Nuestro equipo de gimnasio se encuentra en constante mantenimiento para que
+                    puedas
+                    disfrutar de tus rutinas.</p>
+            </div>
         </div>
-
-        <div class="instalacion area3" data-aos="zoom-in-up">
-            <img src="../media/instalaciones3.jpg" alt="Instalaciones Sport fit">
-            <p class="descripcion">Nuestro equipo de gimnasio se encuentra en constante mantenimiento para que puedas
-                disfrutar de tus rutinas.</p>
-        </div>
-    </aside>
-
-    <div class="grid_gym_footer">
-        <div id="banner_instalaciones" class="banner_instalaciones"></div>
-
-
-        <footer>Todos los derechos reservados 2022 | Sport Fit</footer>
     </div>
-    <script>
-        AOS.init();
-    </script>
+    </div>
+</aside>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="banner_instalaciones" class="col-md-12 banner_instalaciones"></div>
+    </div>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="row">
+        <p class="col-md-12"> Todos los derechos reservados 2022 | Sport Fit</p>
+    </div>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+
+<script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
