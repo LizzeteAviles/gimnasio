@@ -183,6 +183,8 @@ a:hover {
     }
 }
 
+
+
 main span {
     font-family: 'Bebas Neue';
     color: #fad149;
@@ -215,6 +217,15 @@ aside h2 {
     text-align: center;
     padding: 10px;
 }
+
+.disciplina img{
+    transition: all 0.5s ease-in;
+}
+
+.disciplina img:hover{
+    transform: scale(1.1);
+}
+
 
 .disciplina h2 {
     font-family: 'Poppins', sans-serif;
