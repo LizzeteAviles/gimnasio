@@ -7,43 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horarios | Sport Fit</title>
     <link rel="icon" type="image/x-icon" href="../media/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap"rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <div class="grid_horarios">
-        <header>
-            <a href="../index.html"><img src="../media/logo.png" alt="logo gimnasio"></a>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="../index.html">home</a>
-                    </li>
-                    <li>
-                        <a href="gym.html">gym</a>
-                    </li>
-                    <li>
-                        <a href="team.html">team</a>
-                    </li>
-                    <li>
-                        <a href="horarios.html" class="activo">horarios</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+   
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="logo" href="../index.html"><img src="../media/logo.png" alt="logo gimnasio"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gym.html">gym</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="team.html">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="horarios.html">horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <main id="banner_horarios">
-            <h1>Tenemos las mejores clases para tu entrenamiento</h1>
-            <h2>Elige el horario que más te acomode</h2>
-        </main>
-
-        <aside class="horarios">
-            <table cellspacing="10px" cellpadding="50px">
+    
+    <main id="banner_horarios" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 main">
+                <h1>Tenemos las mejores clases para tu entrenamiento</h1>
+                <h2>Elige el horario que más te acomode</h2>
+            </div>
+        </div>
+    </main>
+    
+    
+    <aside class="container-fluid horarios">
+        <div class="row tabla_padding">
+            <table class=" col-md-12 table table-dark table-striped">
                 <tr class="rubros">
                     <td>Clase</td>
                     <td>Horario</td>
@@ -65,35 +85,45 @@
                     <td>Mariana</td>
                 </tr>
             </table>
-        </aside>
+        </div>
+    </aside>
+
+    
+    <div class="container-fluid">
+        <div class="row">
+    
+            <div class="col-lg-4 col-md-12 seccion siguenos">
+                <h2>¡SÍGUENOS EN NUESTRAS REDES!</h2>
+                <p>Mantente al tanto de nuestras clases especiales.</p>
+            </div>
+    
+            <div class="col-lg-4 col-md-12 horarios_end seccion iphone" data-aos="zoom-in-up">
+                <img src="../media/siguenos.jpg" alt="Gimnasio">
+            </div>
+    
+            <div class="col-lg-4 col-md-12 seccion actualizacion">
+                <h2>¡TODOS LOS DÍAS HAY UNA ACTUALIZACIÓN!</h2>
+                <p>Consulta los tips que tenemos para ti.</p>
+            </div>
+    
+        </div>
+    
     </div>
+    
 
-
-    <div class="seccion_horarios">
-
-        <div class="seccion siguenos">
-            <h2>¡SÍGUENOS EN NUESTRAS REDES!</h2>
-            <p>Mantente al tanto de nuestras clases especiales.</p>
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-md-12"> Todos los derechos reservados 2022 | Sport Fit</p>
         </div>
+    </footer>
 
-        <div class="horarios_end seccion iphone" data-aos="zoom-in-up">
-            <img src="../media/siguenos.jpg" alt="Gimnasio">
-        </div>
-
-        <div class="seccion actualizacion">
-            <h2>¡TODOS LOS DÍAS HAY UNA ACTUALIZACIÓN!</h2>
-            <p>Consulta los tips que tenemos para ti.</p>
-        </div>
-
-
-
-
-        <footer>Todos los derechos reservados 2022 | Sport Fit</footer>
-    </div>
 
     <script>
         AOS.init();
     </script>
-</body>
 
-</html>
+
+    <script src="../js/bootstrap.min.js"></script>
+    </body>
+    
+    </html>

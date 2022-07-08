@@ -7,54 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Sport Fit</title>
     <link rel="icon" type="image/x-icon" href="../media/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="grid_gym">
-        <header>
-            <a href="../index.html"><img src="../media/logo.png" alt="logo gimnasio"></a>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="../index.html">home</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="logo" href="../index.html"><img src="../media/logo.png" alt="logo gimnasio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /> </svg></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="gym.html">gym</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gym.html">gym</a>
                     </li>
-                    <li>
-                        <a href="team.html">team</a>
+                    <li class="nav-item">
+                        <a class="nav-link " href="team.html">team</a>
                     </li>
-                    <li>
-                        <a href="horarios.html">horarios</a>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="horarios.html">horarios</a>
                     </li>
-                    <li>
-                        <a href="contacto.html" class="activo">contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">contacto</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
 
-        <main id="banner_contacto">
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main id="banner_contacto" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 main">
             <h1>ENVÍANOS UN MENSAJE</h1>
             <h2>Reserva tu clase ahora mismo</p>
-        </main>
+        </div>
     </div>
+</main>
 
-    <div class="grid_contacto">
 
-        <form class="form_grid">
+<aside class="container-fluid seccion_formulario">
+    <div class="row">
+
+        <form class="col-md-6">
             <div>
                 <label for="Nombre">Nombre</label>
                 <input type="text" placeholder="Ingrese su nombre" name="Nombre"></input>
             </div>
-
             <div>
                 <label for="Whatsapp">Whatsapp</label>
                 <input type="phone" placeholder="Ingrese su Whatsapp" name="Whatsapp"></input>
             </div>
-
-
             <div>
                 <label for="clase">Selecciona tu clase</label>
                 <select name="clase" id="">
@@ -63,30 +77,33 @@
                     <option value="Gimnasio">Gimnasio</option>
                 </select>
             </div>
-
             <div class="botones_form">
                 <input type="submit" name="" id="" value="Enviar" class="boton_enviar">
                 <input type="reset" class="boton_reset">
             </div>
-
         </form>
 
 
-        <div class="complemento_form">
+        <div class="col-md-6 col-sm-12 complemento_form">
             <p>¡Visítanos! Estamos muy cerca de ti</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.330815349661!2d-99.16869369191409!3d19.427020596721867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1654479969325!5m2!1ses-419!2smx"
-                width="400px" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-
-
-
-
-        <footer>Todos los derechos reservados 2022 | Sport Fit</footer>
     </div>
+</aside>
 
+
+<footer class="container-fluid">
+    <div class="row">
+        <p class="col-md-12"> Todos los derechos reservados 2022 | Sport Fit</p>
+    </div>
+</footer>
+
+
+<script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
