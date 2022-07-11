@@ -41,61 +41,14 @@ body {
     background-size: cover;
 }
 
-#contacto {
-    background-color: rgb(234, 234, 234);
-    display: flex;
-    flex-direction: row;
-}
-
 aside {
     padding: 80px 100px;
     background-color: rgb(234, 234, 234);
-    overflow: hidden;
 }
-
-.aside {
-    padding: 80px 100px;
-    background-color: #fff;
-}
-
 
 article {
     padding: 50px 20px;
     flex-wrap: wrap;
-}
-
-
-ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-ul a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    color: #fad149;
-}
-
-.activo {
-    color: #fad149;
-}
-
-.menu li {
-    font-size: 1.2rem;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 2px;
 }
 
 .logo img {
@@ -121,6 +74,10 @@ a:hover {
     background-size: cover;
     height: 400px;
     width: 100%;
+}
+
+main {
+    background-color: #000;
 }
 
 .main h1 {
@@ -154,25 +111,6 @@ a:hover {
     animation-iteration-count: 1;
 }
 
-.texto_slider {
-    font-family: 'Bebas Neue';
-    font-weight: bolder;
-    font-size: 5rem;
-    font-style: italic;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 250px;
-    animation-duration: 2s;
-    animation-name: opacidad;
-    animation-iteration-count: 1;
-}
-
-.tabla_padding {
-    padding: 0px 200px;
-}
-
 @keyframes opacidad {
     0% {
         opacity: 0;
@@ -182,7 +120,6 @@ a:hover {
         opacity: 100;
     }
 }
-
 
 
 main span {
@@ -218,11 +155,12 @@ aside h2 {
     padding: 10px;
 }
 
-.disciplina img{
+.disciplina img {
     transition: all 0.5s ease-in;
 }
 
-.disciplina img:hover{
+
+.disciplina img:hover {
     transform: scale(1.1);
 }
 
@@ -309,7 +247,6 @@ h2 {
 }
 
 .instalacion {
-
     padding-bottom: 50px;
     text-align: center;
 }
@@ -341,6 +278,24 @@ main h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-duration: 2s;
+    animation-name: transform;
+    animation-iteration-count: 1;
+    transform: translateY(0);
+}
+
+@keyframes transform {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2rem);
+    }
+}
+
+.coach:hover {
+    transform: translateY(-2rem);
 }
 
 .coach img {
@@ -568,10 +523,6 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.ajuste {
-    overflow: hidden;
 }
 
 /*ADAPTACIONES*/
