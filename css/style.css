@@ -527,7 +527,158 @@ iframe {
 
 /*ADAPTACIONES*/
 
-@media screen and (max-width: 1024px) {
+@media (min-width:641px) and (max-width:920px) {
+   
+    h1 {
+        font-size: 3rem;
+    }
+
+    .tags {
+        flex-direction: column;
+        padding: 50px;
+
+    }
+
+    .tags p {
+        padding: 20px 50px;
+        width: 100%;
+    }
+
+    .right p {
+        order: 2;
+        text-align: left;
+    }
+
+
+    .descripcion {
+        padding: 10px 50px;
+    }
+
+    .instalacion_texto {
+        padding: 15px 50px;
+
+    }
+
+    #banner_instalaciones {
+        height: 153px;
+
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+
+    .instalacion_texto {
+        padding: 10px 100px;
+    }
+
+
+    table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .seccion_horarios {
+
+        justify-items: center;
+    }
+
+
+    .main h1 {
+        font-size: 3rem;
+    }
+
+    .texto_slider {
+        font-size: 3rem;
+        line-height: 4rem;
+    } 
+}
+
+@media (min-width:320px) and (max-width:640px){
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    .tags {
+        flex-direction: column;
+        padding: 50px;
+        order: 2;
+    }
+
+    .tags p {
+        padding: 20px 50px;
+    }
+
+    .right p {
+        order: 2;
+    }
+
+
+    .descripcion {
+        padding: 0 50px;
+    }
+
+    #banner_instalaciones {
+        height: 160px;
+
+    }
+
+
+    .menu li {
+        padding: 10px;
+
+    }
+
+    table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .siguenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iphone {
+        padding-top: 0px;
+
+    }
+
+
+    .actualizacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion_horarios {
+        justify-items: center;
+    }
+
+
+
+    .main h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .texto_slider {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+/*@media screen and (max-width: 1024px) {
 
     .instalacion_texto {
         padding: 15px 100px;
@@ -707,4 +858,4 @@ iframe {
         font-size: 3rem;
         line-height: 4rem;
     }
-}
+}*/
