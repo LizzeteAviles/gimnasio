@@ -28,26 +28,6 @@
   justify-content: center;
   align-items: center; }
 
-/*.slide1 {
-    background-image: url("../media/banner.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide2 {
-    background-image: url("../media/banner_horarios.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide3 {
-    background-image: url("../media/banner_gym.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}*/
 article {
   padding: 50px 20px;
   flex-wrap: wrap; }
@@ -215,6 +195,42 @@ footer {
   .texto_slider {
     font-size: 3rem;
     line-height: 4rem; } }
+
+.botones_form {
+  display: flex;
+  width: 100%; }
+
+.boton_enviar, .boton_reset {
+  background-color: #000;
+  color: #fad149;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline;
+  width: 50%; }
+  .boton_enviar:hover, .boton_reset:hover {
+    background-color: #fad149;
+    color: #000; }
+
+.boton_reset {
+  background-color: #bebebe;
+  color: #000; }
+  .boton_reset:hover {
+    background-color: #fad149;
+    color: #000; }
+
+#banner_contacto {
+  background-image: url("../media/banner_contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#banner_contacto {
+  height: 500px;
+  width: 100%; }
 
 * {
   margin: 0;

@@ -1,0 +1,49 @@
+.botones_form {
+    display: flex;
+    width: 100%;
+}
+
+.boton_enviar {
+    background-color: #000;
+    color: #fad149;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline;
+    width: 50%;
+
+    &:hover{
+        background-color: #fad149;
+        color: #000;
+    }
+}
+
+.boton_reset {
+    @extend .boton_enviar;
+    background-color: rgb(190, 190, 190);
+    color: #000;
+
+    &:hover{
+        background-color: #fad149;
+        color: #000;
+    }
+}
+
+#banner_contacto {
+    background-image: url("../media/banner_contacto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ #banner_contacto {
+    @include sizes(100%, 500px);
+ }
+ 

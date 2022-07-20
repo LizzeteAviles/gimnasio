@@ -26,7 +26,7 @@ $estilos: (
     background-size: map-get($estilos, tamano) ;
 }
 
-.slide2{
+.slide2 {
     background-repeat: map-get($estilos, repetir) ;
     background-position: map-get($estilos, posicion) ;
     background-size: map-get($estilos, tamano) ;
@@ -38,34 +38,14 @@ $estilos: (
     background-size: map-get($estilos, tamano) ;
 }
 
+
+
 .seccion_tags {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-/*.slide1 {
-    background-image: url("../media/banner.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide2 {
-    background-image: url("../media/banner_horarios.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide3 {
-    background-image: url("../media/banner_gym.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}*/
-
 
 article {
     padding: 50px 20px;
