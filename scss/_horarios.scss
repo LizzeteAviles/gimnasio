@@ -1,0 +1,81 @@
+
+#banner_horarios {
+    background-image: url("../media/banner_horarios.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+
+table {
+    width: 100%;
+
+}
+
+.rubros td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fad149;
+    padding: 10px 50px;
+}
+
+
+.info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+}
+
+tr .info {
+    border-bottom: #000 solid 2px;
+}
+
+.seccion{
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        text-align: left;
+        color: #000;
+    }
+}
+
+.iphone {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actualizacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.siguenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+

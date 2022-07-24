@@ -38,6 +38,17 @@
         font-size: 3rem;
         line-height: 4rem;
     } 
+
+    #banner_instalaciones {
+        height: 153px;
+
+    }
+
+    .seccion_horarios {
+
+        justify-items: center;
+    }
+
 }
 
 
@@ -77,4 +88,33 @@
         font-size: 3rem;
         line-height: 4rem;
     }
+
+    #banner_instalaciones {
+        height: 160px;
+
+    }
+
+    .seccion_horarios {
+        justify-items: center;
+    }
+
+    .siguenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iphone {
+        padding-top: 0px;
+
+    }
+
+    .actualizacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
